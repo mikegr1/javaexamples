@@ -1,0 +1,223 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true,
+					"ownedViews": [
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFxoYmjpTEkhEg=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 200,
+							"top": 152,
+							"width": 160,
+							"height": 169,
+							"text": "--transaction 1--\nstatus-pending\ncustomerID-get from customer input\ncollectorID-pending\ndeliveryID-pending\ncreationDate-current date\ndeliveryDate-pending\ntracking-automatically generated"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFxoYxXezEp34k=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 200,
+							"top": 496,
+							"width": 168,
+							"height": 176,
+							"text": "--transaction 2--\ncollectorID-updated\nstatus-updated to active\n"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFxoY20WjEt0eQ=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 600,
+							"top": 528,
+							"width": 273,
+							"height": 121,
+							"text": "--transaction 3--\nstatus-updated to delivered\n\ndeliveryDate-updated to current date\n\ndeliveryID-updated"
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAFxoZA1xDE+oQQ=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFxoYxXezEp34k="
+							},
+							"tail": {
+								"$ref": "AAAAAAFxoYmjpTEkhEg="
+							},
+							"lineStyle": 1,
+							"points": "280:321;282:495"
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAFxoZBBwDFBX00=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFxoY20WjEt0eQ="
+							},
+							"tail": {
+								"$ref": "AAAAAAFxoYxXezEp34k="
+							},
+							"lineStyle": 1,
+							"points": "368:584;599:586"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFxoZBchzFEy+g=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 368,
+							"top": 376,
+							"width": 233,
+							"height": 73,
+							"text": "Transaction state 2 happens once the package is dropped off at the store by the customer. below are the updates to the transaction"
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAFxoZFSdzFKffo=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFxoZA1xDE+oQQ="
+							},
+							"tail": {
+								"$ref": "AAAAAAFxoZBchzFEy+g="
+							},
+							"lineStyle": 1,
+							"points": "367:410;281:408"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFxoZFyLjFNlMA=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 376,
+							"top": 696,
+							"width": 225,
+							"height": 121,
+							"text": "Transaction state 3 occurs only when the package with the same tracking string has left the warehouse for its desired location "
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAFxoZKKNjFUvZs=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFxoZBBwDFBX00="
+							},
+							"tail": {
+								"$ref": "AAAAAAFxoZFyLjFNlMA="
+							},
+							"lineStyle": 1,
+							"points": "486:695;483:585"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFxoZNCrDFdRD4=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 192,
+							"top": 48,
+							"width": 60,
+							"height": 15
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFxoZNiYDFglEc=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 184,
+							"top": 24,
+							"width": 248,
+							"height": 57,
+							"text": "Transaction state 1 occurs when the base transaction is created from the website function"
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAFxoZP/iDFk1Sk=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFxoYmjpTEkhEg="
+							},
+							"tail": {
+								"$ref": "AAAAAAFxoZNiYDFglEc="
+							},
+							"lineStyle": 1,
+							"points": "303:81;292:151"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFxoZROejFoejM=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 912,
+							"top": 280,
+							"width": 60,
+							"height": 15
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFxoZRr4TFr0wg=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;42;0",
+							"left": 488,
+							"top": 144,
+							"width": 520,
+							"height": 120,
+							"text": "Transaction state diagram from website"
+						}
+					]
+				}
+			]
+		}
+	]
+}

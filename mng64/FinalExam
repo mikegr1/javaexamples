@@ -1,0 +1,42 @@
+1. an executor service is an OOP principal that makes itself evident
+in when dealing with threaded programs. An executor service acts as
+the framework for the tasks that need to be solved, and the execution of
+said tasks. Executor services are able to terminate tasks, can also provide
+the ability to create new tasks, and assigns tasks to threads as dictated by
+the implementation. Simply put, executor services are the manager
+and framework for a multi-threaded program. There are limitations in the
+executor service in the sense that it does not take into account task
+dependencies.
+
+
+2. A fork/join framework is similar to the executor service in that it deals
+with multi-threaded programs and task execution. The primary feature
+(and difference) of a fork/join framework is that the framework takes into
+account task dependencies, and only executes tasks once all dependencies
+are satisfied. Fork/join accomplishes this by looking at a task and its
+dependencies and organizes the queue for tasks accordingly. So, the framework
+"forks" the tasks based on dependencies, and "joins" the tasks once the threads
+executing the task satisfy the dependencies. Ultimately this leads to a final
+result derived from the final joining of all the forked tasks. Work distribution
+works hand in hand with the fork/join framework. Firstly work distribution
+refers to the sharing of tasks among different threads to achieve a final
+output. Work distribution is usually not shared evenly among the threads, as
+some tasks can have more dependencies than others. Simply put, work distribution
+is the core principal that makes multi-threading possible.
+
+3.
+threads in forkjoin.part1: 1 thread
+threads in forkjoin.part2: 3 threads
+threads in forkjoin.part3: 4 threads were created but part 3 is broken
+threads in forkjoin.part4: 2 threads
+
+4.
+
+|     Main Class  | Size of material/data   | Average time of execution (specify units) |
+| ----------------|-------------------------|---------------------------|
+| part1.Part1Main |  25198552 bytes         |  2564759912 nanoseconds   |
+| part2.Part2Main |  25198552 bytes         |  1114565633 nanoseconds   |
+| part3.Part3Main |  inconclusive           |  inconclusive             |
+| part4.Part4Main |  25198552 bytes         |  6.5 seconds              |
+
+5.
